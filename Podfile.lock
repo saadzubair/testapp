@@ -1,0 +1,37 @@
+PODS:
+  - AFAmazonS3Client (2.0.1):
+    - AFNetworking (~> 2.2)
+  - AFNetworking (2.4.1):
+    - AFNetworking/NSURLConnection (= 2.4.1)
+    - AFNetworking/NSURLSession (= 2.4.1)
+    - AFNetworking/Reachability (= 2.4.1)
+    - AFNetworking/Security (= 2.4.1)
+    - AFNetworking/Serialization (= 2.4.1)
+    - AFNetworking/UIKit (= 2.4.1)
+  - AFNetworking/NSURLConnection (2.4.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.4.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.4.1)
+  - AFNetworking/Security (2.4.1)
+  - AFNetworking/Serialization (2.4.1)
+  - AFNetworking/UIKit (2.4.1):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - SVProgressHUD (1.1.3)
+
+DEPENDENCIES:
+  - AFAmazonS3Client
+  - AFNetworking (~> 2.4.1)
+  - SVProgressHUD
+
+SPEC CHECKSUMS:
+  AFAmazonS3Client: f12195a6a9908f449489c8b66a3503853d09f0bf
+  AFNetworking: 41d45d2c14219af0fa5addf3cfd433a002c13c9f
+  SVProgressHUD: 748080e4f36e603f6c02aec292664239df5279c1
+
+COCOAPODS: 0.38.2

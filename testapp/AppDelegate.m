@@ -17,7 +17,21 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    CGRect Frame = [[UIScreen mainScreen] bounds];
+    self.window = [[UIWindow alloc] initWithFrame:Frame];
+    self.window.clipsToBounds = YES;
+    
+    [self.window makeKeyAndVisible];
+    [self loadRootVC];
+    
     return YES;
+}
+
+-(void) loadRootVC
+{
+    self.rootVC = [[RootVC alloc] initWithNibName:kROOT_VC bundle:nil];
+    self.navigationController = [[UINavigationController alloc] initWithRootViewController:self.rootVC];
+    self.window.rootViewController = self.navigationController;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
